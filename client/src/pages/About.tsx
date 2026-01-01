@@ -23,10 +23,10 @@ export default function About() {
             <h1 className="text-xl font-bold text-foreground">Faith-N-Hope Neighbors</h1>
           </div>
           <div className="flex items-center gap-6">
-            <a href="/" className="text-foreground hover:text-secondary font-medium">
+            <a href="#/" className="text-foreground hover:text-secondary font-medium">
               Home
             </a>
-            <a href="/about" className="text-foreground hover:text-secondary font-medium">
+            <a href="#/about" className="text-foreground hover:text-secondary font-medium">
               About Us
             </a>
             <a href="https://donate.stripe.com/8x2cMXblt3pb2ta1qp8Zq00" target="_blank" rel="noopener noreferrer">
@@ -180,8 +180,8 @@ export default function About() {
             <div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-primary-foreground/80">
-                <li><a href="/" className="hover:text-primary-foreground transition-colors">Home</a></li>
-                <li><a href="#about" className="hover:text-primary-foreground transition-colors">About Us</a></li>
+                <li><a href="#/" className="hover:text-primary-foreground transition-colors">Home</a></li>
+                <li><a href="#/about" className="hover:text-primary-foreground transition-colors">About Us</a></li>
               </ul>
             </div>
             <div>
