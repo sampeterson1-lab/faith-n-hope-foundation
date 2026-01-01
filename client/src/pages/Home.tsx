@@ -30,9 +30,6 @@ export default function Home() {
             <a href="#about" className="text-foreground hover:text-secondary font-medium">
               About Us
             </a>
-            <a href="#impact" className="text-foreground hover:text-secondary font-medium">
-              Our Impact
-            </a>
             <Button variant="secondary">Donate</Button>
           </div>
         </div>
@@ -191,7 +188,6 @@ export default function Home() {
               <ul className="space-y-2 text-primary-foreground/80">
                 <li><a href="#" className="hover:text-primary-foreground transition-colors">Home</a></li>
                 <li><a href="#about" className="hover:text-primary-foreground transition-colors">About Us</a></li>
-                <li><a href="#impact" className="hover:text-primary-foreground transition-colors">Our Impact</a></li>
               </ul>
             </div>
             <div>
