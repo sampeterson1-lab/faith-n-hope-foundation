@@ -26,10 +26,12 @@ export default function About() {
             <a href="/" className="text-foreground hover:text-secondary font-medium">
               Home
             </a>
-            <a href="#about" className="text-foreground hover:text-secondary font-medium">
+            <a href="/about" className="text-foreground hover:text-secondary font-medium">
               About Us
             </a>
-            <Button variant="secondary">Donate</Button>
+            <a href="https://donate.stripe.com/8x2cMXblt3pb2ta1qp8Zq00" target="_blank" rel="noopener noreferrer">
+              <Button variant="secondary">Donate</Button>
+            </a>
           </div>
         </div>
       </nav>
@@ -154,12 +156,14 @@ export default function About() {
           <p className="text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
             Every contribution helps us provide essential services and build pathways to long-term stability for families in need.
           </p>
-          <Button
-            size="lg"
-            className="bg-white text-primary hover:bg-primary-foreground"
-          >
-            Donate Now
-          </Button>
+          <a href="https://donate.stripe.com/8x2cMXblt3pb2ta1qp8Zq00" target="_blank" rel="noopener noreferrer">
+            <Button
+              size="lg"
+              className="bg-white text-primary hover:bg-primary-foreground"
+            >
+              Donate Now
+            </Button>
+          </a>
         </div>
       </section>
 

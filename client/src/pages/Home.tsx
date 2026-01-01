@@ -30,7 +30,9 @@ export default function Home() {
             <a href="/about" className="text-foreground hover:text-secondary font-medium">
               About Us
             </a>
-            <Button variant="secondary">Donate</Button>
+            <a href="https://donate.stripe.com/8x2cMXblt3pb2ta1qp8Zq00" target="_blank" rel="noopener noreferrer">
+              <Button variant="secondary">Donate</Button>
+            </a>
           </div>
         </div>
       </nav>
@@ -48,9 +50,11 @@ export default function Home() {
                 Faith-N-Hope Neighbors serves newly resettled families, single mothers and their children, and families experiencing poverty or high need. We provide essential household items, transportation assistance, educational support, and home repairs through skilled volunteers.
               </p>
               <div className="flex gap-4">
-                <Button variant="secondary" size="lg">
-                  Donate Now
-                </Button>
+                <a href="https://donate.stripe.com/8x2cMXblt3pb2ta1qp8Zq00" target="_blank" rel="noopener noreferrer">
+                  <Button variant="secondary" size="lg">
+                    Donate Now
+                  </Button>
+                </a>
                 <Button variant="outline" size="lg">
                   Learn More
                 </Button>
@@ -165,9 +169,11 @@ export default function Home() {
           <p className="text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
             Your donation directly supports families in need. Every contribution helps us provide essential services and build pathways to long-term stability.
           </p>
-          <Button className="bg-white text-primary hover:bg-accent" size="lg">
-            Donate Now
-          </Button>
+          <a href="https://donate.stripe.com/8x2cMXblt3pb2ta1qp8Zq00" target="_blank" rel="noopener noreferrer">
+            <Button className="bg-white text-primary hover:bg-accent" size="lg">
+              Donate Now
+            </Button>
+          </a>
         </div>
       </section>
 
