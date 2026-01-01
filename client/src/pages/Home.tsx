@@ -63,8 +63,8 @@ export default function Home() {
             {/* Right: Hero Image */}
             <div className="fade-in" style={{ animationDelay: "0.2s" }}>
               <img
-                src="/images/hero-community.png"
-                alt="Community coming together"
+                src="/images/hero-idaho-mountains.png"
+                alt="Community in Eastern Idaho with Grand Tetons sunrise"
                 className="w-full rounded-lg shadow-lg"
               />
             </div>
@@ -86,52 +86,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Impact Section */}
-      <section id="impact" className="py-16 md:py-24 bg-accent">
-        <div className="container">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground text-center mb-16">
-            Our Impact
-          </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {/* Impact Card 1 */}
-            <div className="bg-white rounded-lg p-8 text-center shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Users className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="text-2xl font-bold text-foreground mb-2">500+</h3>
-              <p className="text-foreground/70">Families Served</p>
-            </div>
-
-            {/* Impact Card 2 */}
-            <div className="bg-white rounded-lg p-8 text-center shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-16 h-16 bg-secondary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <HomeIcon className="w-8 h-8 text-secondary" />
-              </div>
-              <h3 className="text-2xl font-bold text-foreground mb-2">200+</h3>
-              <p className="text-foreground/70">Homes Repaired</p>
-            </div>
-
-            {/* Impact Card 3 */}
-            <div className="bg-white rounded-lg p-8 text-center shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <BookOpen className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="text-2xl font-bold text-foreground mb-2">1000+</h3>
-              <p className="text-foreground/70">Students Supported</p>
-            </div>
-
-            {/* Impact Card 4 */}
-            <div className="bg-white rounded-lg p-8 text-center shadow-sm hover:shadow-md transition-shadow">
-              <div className="w-16 h-16 bg-secondary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Heart className="w-8 h-8 text-secondary" />
-              </div>
-              <h3 className="text-2xl font-bold text-foreground mb-2">2000+</h3>
-              <p className="text-foreground/70">Volunteers</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Services Section */}
       <section className="py-16 md:py-24 bg-white">
@@ -149,9 +104,9 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-foreground mb-3">Household Support</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-3">Essential Household Items</h3>
                 <p className="text-foreground/70 leading-relaxed">
-                  We provide essential household items and furniture to help families establish stable homes.
+                  Beds, bedding, and kitchen supplies for newly arrived families to establish stable homes.
                 </p>
               </div>
             </div>
@@ -164,9 +119,9 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-foreground mb-3">Transportation</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-3">Transportation & Auto Assistance</h3>
                 <p className="text-foreground/70 leading-relaxed">
-                  Assistance with transportation to medical appointments, job interviews, and essential services.
+                  Vehicle purchases, auto repairs, and transportation assistance for medical appointments and employment.
                 </p>
               </div>
             </div>
@@ -179,9 +134,9 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-foreground mb-3">Educational Support</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-3">Educational & Financial Support</h3>
                 <p className="text-foreground/70 leading-relaxed">
-                  Tutoring, school supplies, and educational resources to help children succeed.
+                  College funding, learning resources, emergency financial assistance for utilities and rent, plus financial guidance.
                 </p>
               </div>
             </div>
@@ -194,9 +149,9 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-foreground mb-3">Home Repairs</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-3">Home Repairs & Crisis Support</h3>
                 <p className="text-foreground/70 leading-relaxed">
-                  Skilled volunteers provide essential home repairs and maintenance to ensure safe living conditions.
+                  Skilled volunteer labor for home repairs, emergency assistance for medical bills, and community resource connections.
                 </p>
               </div>
             </div>
@@ -219,29 +174,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Board Section */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground text-center mb-16">
-            Board of Directors
-          </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {[
-              { name: "Sam Peterson", role: "Chair" },
-              { name: "David Feldman", role: "Treasurer" },
-              { name: "Jeremy Johnson", role: "Secretary" },
-              { name: "JJ Moss", role: "Operations Director" },
-            ].map((member) => (
-              <div key={member.name} className="text-center">
-                <div className="w-24 h-24 bg-accent rounded-full mx-auto mb-4"></div>
-                <h3 className="text-lg font-bold text-foreground">{member.name}</h3>
-                <p className="text-foreground/70">{member.role}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="bg-foreground text-primary-foreground py-12">
