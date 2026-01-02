@@ -4,7 +4,9 @@
       "Bash(mkdir:*)",
       "Bash(ls:*)",
       "Bash(git add:*)",
-      "Bash(git commit -m \"$\\(cat <<''EOF''\nSimplify site to plain HTML/CSS - remove React complexity\n\n- Replace React/Vite app with static HTML pages\n- Add index.html \\(home\\) and about.html \\(about us\\)\n- Add css/styles.css with all styling\n- Copy images to root images/ folder\n- Remove all React components, configs, and dependencies\n- Remove GitHub Actions build workflow \\(not needed for static files\\)\n- Simplify .gitignore\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nSimplify site to plain HTML/CSS - remove React complexity\n\n- Replace React/Vite app with static HTML pages\n- Add index.html \\(home\\) and about.html \\(about us\\)\n- Add css/styles.css with all styling\n- Copy images to root images/ folder\n- Remove all React components, configs, and dependencies\n- Remove GitHub Actions build workflow \\(not needed for static files\\)\n- Simplify .gitignore\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push)",
+      "Bash(git commit:*)"
     ]
   }
 }
