@@ -9,8 +9,10 @@
 /* CSS Variables */
 :root {
   --primary: #9CAF88;
+  --primary-dark: #5F714C;   /* sage darkened to pass WCAG AA (4.7:1 on cream) */
   --primary-foreground: #F5F1E8;
   --secondary: #D97757;
+  --secondary-dark: #B54B29; /* terracotta darkened to pass WCAG AA (4.65:1 on cream) */
   --secondary-foreground: #F5F1E8;
   --background: #F5F1E8;
   --foreground: #2C2C2C;
@@ -138,7 +140,7 @@ img {
 }
 
 .nav-link:hover {
-  color: var(--secondary);
+  color: var(--secondary-dark);
 }
 
 /* Buttons */
@@ -171,7 +173,7 @@ img {
 }
 
 .btn-secondary {
-  background-color: var(--secondary);
+  background-color: var(--secondary-dark);
   color: var(--secondary-foreground);
 }
 
@@ -187,11 +189,12 @@ img {
 
 .btn-white {
   background-color: white;
-  color: var(--primary);
+  color: var(--primary-dark);
 }
 
 .btn-white:hover {
   background-color: var(--accent);
+  color: var(--foreground);
 }
 
 .btn-lg {
@@ -466,11 +469,11 @@ img {
 }
 
 .value-icon-primary svg {
-  fill: var(--primary);
+  fill: var(--primary-dark);
 }
 
 .value-icon-secondary svg {
-  fill: var(--secondary);
+  fill: var(--secondary-dark);
 }
 
 .value-title {
@@ -487,7 +490,7 @@ img {
 
 /* CTA Section */
 .cta {
-  background: linear-gradient(to right, var(--primary), var(--secondary));
+  background: linear-gradient(to right, var(--primary-dark), var(--secondary-dark));
   padding: 4rem 0;
   text-align: center;
 }
@@ -513,7 +516,7 @@ img {
 
 .cta-text {
   font-size: 1.125rem;
-  color: rgba(245, 241, 232, 0.9);
+  color: var(--primary-foreground);
   margin-bottom: 2rem;
   max-width: 42rem;
   margin-left: auto;
