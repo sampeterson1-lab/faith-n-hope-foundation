@@ -612,14 +612,35 @@ img {
   }
 }
 
-/* Mobile Navigation Adjustments */
-@media (max-width: 639px) {
-  .nav-title {
-    font-size: 1rem;
+/* Mobile Navigation Adjustments
+ * Five nav items overflow a phone viewport on one line, so below 700px the bar
+ * stacks: brand on top, links wrapping centered beneath it. No JS menu needed. */
+.nav-content {
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 699px) {
+  .nav-content {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .nav-links {
-    gap: 0.75rem;
+    justify-content: center;
+    gap: 0.85rem;
+    row-gap: 0.5rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .nav-title {
+    font-size: 1rem;
   }
 
   .nav-link {
@@ -813,6 +834,15 @@ img {
 
 .notice-text:last-child {
   margin-bottom: 0;
+}
+
+/* Links inside .notice sit on the tan accent background, where both brand
+ * accents fall below 4.5:1. Use the foreground colour instead (9.7:1). */
+.notice a {
+  color: var(--foreground);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 /* Visible focus for keyboard users */
