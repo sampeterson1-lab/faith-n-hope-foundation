@@ -636,3 +636,204 @@ img {
 .max-w-prose {
   max-width: 48rem;
 }
+
+/* Crisis Band — highest-priority contacts, dark for prominence */
+.crisis-band {
+  background-color: var(--foreground);
+  color: var(--primary-foreground);
+  padding: 3rem 0;
+}
+
+.crisis-heading {
+  font-size: 1.5rem;
+  color: var(--primary-foreground);
+  margin-bottom: 0.5rem;
+}
+
+.crisis-intro {
+  color: rgba(245, 241, 232, 0.85);
+  margin-bottom: 2rem;
+}
+
+.crisis-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .crisis-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.crisis-card {
+  border: 2px solid rgba(245, 241, 232, 0.3);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.crisis-card-name {
+  font-size: 1.0625rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-foreground);
+}
+
+.crisis-number {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-foreground);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  margin-bottom: 0.35rem;
+}
+
+.crisis-number:hover,
+.crisis-number:focus-visible {
+  color: var(--accent);
+}
+
+.crisis-note {
+  font-size: 0.875rem;
+  color: rgba(245, 241, 232, 0.8);
+  line-height: 1.5;
+}
+
+/* Resource Listings */
+.resource-group {
+  margin-bottom: 3.5rem;
+}
+
+.resource-group:last-child {
+  margin-bottom: 0;
+}
+
+.resource-group-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.resource-group-intro {
+  color: rgba(44, 44, 44, 0.75);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.resource-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .resource-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.resource-item {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.resource-name {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.resource-phone {
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--secondary-dark);
+  margin-bottom: 0.5rem;
+}
+
+.resource-phone:hover,
+.resource-phone:focus-visible {
+  text-decoration: underline;
+}
+
+.resource-meta {
+  font-size: 0.9375rem;
+  color: rgba(44, 44, 44, 0.75);
+  line-height: 1.55;
+  margin-bottom: 0.35rem;
+}
+
+.resource-meta:last-child {
+  margin-bottom: 0;
+}
+
+.resource-link {
+  font-size: 0.9375rem;
+  color: var(--primary-dark);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  overflow-wrap: anywhere;
+}
+
+.county-tag {
+  display: inline-block;
+  background-color: var(--accent);
+  color: var(--accent-foreground);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.2rem 0.55rem;
+  border-radius: 0.35rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Honest-framing notice */
+.notice {
+  background-color: var(--accent);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.notice-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.notice-text {
+  color: rgba(44, 44, 44, 0.85);
+  line-height: 1.65;
+  margin-bottom: 0.75rem;
+}
+
+.notice-text:last-child {
+  margin-bottom: 0;
+}
+
+/* Visible focus for keyboard users */
+a:focus-visible,
+.btn:focus-visible {
+  outline: 3px solid var(--secondary-dark);
+  outline-offset: 2px;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background-color: var(--foreground);
+  color: var(--primary-foreground);
+  padding: 0.75rem 1.25rem;
+  z-index: 100;
+  border-radius: 0 0 var(--radius) 0;
+}
+
+.skip-link:focus {
+  left: 0;
+}
